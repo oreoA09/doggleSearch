@@ -1,0 +1,74 @@
+/* styling with flexbox */
+* {
+  box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+}
+
+body {
+  font-family: 'Roboto', sans-serif;
+	background: purple;
+	height: 100%;
+  width: 100%;
+}
+
+.container {
+  width: 80%;
+  margin: 50px auto;
+	background-image: url("dogsbg.png");
+	background-size: cover;
+	background-repeat: no-repeat;
+	border-radius: 5px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+	padding: 120px 0px 80px 0px;
+	line-height: 50px;
+	font-weight: bolder;
+	font-size: 1.2rem;
+	text-align: center;
+}
+
+input[type="number"]{
+	display: none;
+}
+input[type="submit"]{
+	padding: 10px 15px;
+	background: purple;
+	color: white;
+/* 	font-weight: bolder; */
+	border: none;
+	border-radius: 5px;
+	font-size: 1.1rem;
+}
+
+#result{
+	display: flex;
+	justify-content: space-around;
+	align-items: center;
+	flex-wrap: wrap;
+	padding: 20px 0px;
+}
+
+#result img{
+	width: 40%;
+	border: 5px solid white;
+	border-bottom-width: 30px;
+	margin: 10px 0px;
+}
+/* 
+@media only screen and (max-width: 480){
+	#result{
+		flex-direction: column;
+	}
+	#result img{
+	width: 90%;
+	}
+}
+
+@media only screen and (max-width: 780){
+	#result img{
+	width: 45%;
+	}
+} */
